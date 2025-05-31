@@ -1,6 +1,7 @@
 *
-!Colleen.c
-!Makefile
+!C/Colleen/Colleen.c
+!Colleen.s
 !Grace.c
-!Grace.s
+!Sully.c
+!Makefile
 !.gitignore
