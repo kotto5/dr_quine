@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "----------- Test Colleen --------------"
 cd Colleen
 echo "1. 実行ファイルの標準出力への出力内容が、自身のソースコードと一致しているか"
@@ -44,6 +46,7 @@ cd Sully
 echo "1. 実行ファイルは Sully_x.c (0 <= x <= 5) という名前のソースコードを生成する。その内容がソースコードと一致しているか"
 ./Sully
 for i in {0..5}; do
+    echo $PWD
     if [ -f "Sully_$i.c" ]; then
         diff "Sully_$i.c" Sully.c
         if [ $? -eq 0 ]; then
